@@ -4,12 +4,12 @@ pipeline {
     tools {nodejs "node"}
 
     stages {
-        stage('Build') {
+        stage(' Installerar dependencies') {
             steps {
                 bat 'npm install'
             }
         }
-        stage('Build Production files') {
+        stage('Build ') {
             steps{
                 bat 'npm run build'
             }
