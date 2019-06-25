@@ -4,7 +4,7 @@ pipeline {
     tools {nodejs "node"}
 
     stages {
-        stage(' Installerar dependencies') {
+        stage('Installerar dependencies') {
             steps {
                 bat 'npm install'
             }
@@ -16,12 +16,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'npm run Testing..'
+                bat 'npm run test'
             }
         }
         stage('Deploy') {
             steps {
-                bat 'npm run Deploying'
+                bat 'npm run deploy'
             }
         }
     }
