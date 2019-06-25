@@ -16,12 +16,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                bat 'npm run Testing..'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                bat 'npm run Deploying'
             }
         }
     }
