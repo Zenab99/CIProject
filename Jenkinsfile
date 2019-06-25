@@ -4,7 +4,7 @@ pipeline {
     tools {nodejs "node"}
 
     stages {
-        stage('Installerar dependencies') {
+        stage('Install dependencies') {
             steps {
                 bat 'npm install'
             }
